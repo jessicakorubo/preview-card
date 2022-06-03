@@ -1,0 +1,150 @@
+@import url(https://fonts.google.com/specimen/Inter);
+@import url(https://fonts.google.com/specimen/Lexend+Deca);
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+    color: white;
+}
+.photo {
+    background: linear-gradient( rgba(33, 5, 99, 0.8)), url("images/image-header-mobile.jpg");  /* Chrome 10-25, Safari 5.1-6 */
+}
+
+@media screen and (max-width: 1300px) {
+    body {
+        overflow-x: hidden;
+        background-color: hsl(233, 47%, 7%);
+    }
+    .photo {
+
+        display: flex;
+        background-color: hsl(277, 64%, 61%);
+    }
+    .card {
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: hsl(244, 38%, 16%);
+        margin-top: 50px;
+        position: relative;
+        top: 50px;
+        width: 90%;
+        margin: auto;
+       
+    }
+    .container {
+        padding: 30px 0;
+        margin-bottom: 30px;
+        
+    }
+    .photo img {
+       width: 100%;
+       opacity: 0.2;
+    
+    }
+    
+    .text h1  {
+        text-align: center;
+        padding: 20px;
+        
+      
+    }
+    a {
+        text-decoration: none;
+        color: hsl(277, 64%, 61%)
+    }
+    .text p {
+        display: flex;
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .ads {
+        font-family: 'Lexend Deca';
+    }
+    h2 {
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+    }
+    h5 {
+       
+        margin:auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        font-size: 7px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        opacity: 0.6;
+    }
+}
+
+@media screen and (min-width:1301px){
+
+    body {
+        padding: 3rem;
+        font-size: 100%;
+    }
+     .container {
+        margin: auto;
+        margin-top: 100px;
+        height: min-content;
+        width: 70%;
+        
+    }
+    .photo {
+        float: right;
+        width: 50%;
+        background-color: hsl(277, 64%, 61%);
+    }
+    .photo img {
+        width: 100%;
+        object-fit: cover;
+        opacity: 0.6;
+        height: 100%;
+    }
+    .card {
+        margin: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: hsl(244, 38%, 16%);
+    }
+    .left-side {
+        padding: 0 7rem;
+        margin-right: 6rem; 
+    }
+    .text h1 {
+        text-align: left;
+        width: 40%;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        padding-top: 1rem;
+        /* font-size: 9em; */
+
+    }
+    a {
+        text-decoration: none;
+    }
+    .text p {
+        text-align: left;
+        width: 40%;
+        justify-content: center;
+        /* font-size: 4em; */
+        opacity: 0.8;
+    } 
+    .ads {
+        display: flex;
+        flex-direction: row;
+    }
+    .offer {
+        margin-right: 1.5rem;
+    }
+    .offer h5 {
+        position: relative;
+        bottom: 20px;
+    }
+}
